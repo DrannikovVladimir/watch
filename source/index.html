@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Swiss Watch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <button class="main-header__button main-header__button--close">
+        <span class='visually-hidden'>Открыть меню</span>
+      </button>
+      <ul class="main-header__menu main-header__menu--close">
+        <li class="main-header__menu-item">
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li class="main-header__menu-item">
+          <a href="stock.html">Акции</a>
+        </li>
+        <li class="main-header__menu-item">
+          <a href="delivery.html">Доставка</a>
+        </li>
+        <li class="main-header__menu-item">
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/logo.svg" width="19" height="19" alt="Логотип">
+        <span class="main-header__logo-text">conquest</span>
+      </a>
+      <ul class="main-header__user">
+        <li class="main-header__user-item">
+          <form class="form-search" action="index.html" method="post">
+            <label class="form-search__label" for="searchField">
+              <span class="visually-hidden">Найти</span>
+            </label>
+            <input class="form-search__input hidden" id="searchField" type="search">
+          </form>
+        </li>
+        <li class="main-header__user-item">
+          <button class="main-header__like">
+            <span class="visually-hidden">Лайкнуть</span>
+          </button>
+        </li>
+        <li class="main-header__user-item">
+          <a class="main-header__basket" href="basket.html">
+            <span class="visually-hidden">Товары в корзине</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+</body>
+</html>
