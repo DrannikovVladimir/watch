@@ -24,7 +24,6 @@
   font-weight: 700;
   font-size: $font-size;
   line-height: $line-height;
-  text-transform: uppercase;
 }
 
 @mixin Playfair_regular($font-size:32px, $line-height:36px) {
@@ -37,6 +36,13 @@
 @mixin Playfair_bold($font-size:18px, $line-height:20px) {
   font-family: 'Playfair Display', 'Times New Roman', sans-serif;
   font-weight: 700;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin Prata($font-size:16px, $line-height:22px) {
+  font-family: 'Prata', 'Times New Roman', sans-serif;
+  font-weight: 400;
   font-size: $font-size;
   line-height: $line-height;
 }

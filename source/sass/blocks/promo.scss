@@ -1,0 +1,89 @@
+.promo__wrapper {
+  display: flex;
+  align-items: center;
+  width: 1366px;
+  margin: 0 auto;
+  margin-top: -66px;
+  padding: 0 55px;
+  padding-top: 30px;
+
+  background-image: url('../img/bg-promo.png');
+  background-repeat: no-repeat;
+  background-position: 470px center;
+  background-size: auto 798px;
+}
+
+.promo__title-wrapper {
+  position: relative;
+
+  width: 408px;
+  margin-right: 175px;
+  padding-left: 65px;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include Playfair_regular(45px, 60px);
+
+  span {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: -65px;
+    top: 33px;
+
+    width: 50px;
+    height: 1px;
+
+    background-color: #8B8371;
+  }
+}
+
+.promo__subtitle {
+  width: 260px;
+  margin: 0;
+  margin-bottom: 60px;
+
+  @include Roboto_light(14px, 21px)
+}
+
+.promo__button {
+  width: 258px;
+  padding: 26px 35px;
+  border: none;
+
+  @include Roboto_medium(12px, 14px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: $text-color;
+}
+
+.promo__watch-feature {
+  position: absolute;
+
+  @include Prata();
+
+  &--price {
+    top: 90px;
+    left: 650px;
+  }
+
+  &--size {
+    top: 610px;
+    left: 1150px;
+  }
+}
