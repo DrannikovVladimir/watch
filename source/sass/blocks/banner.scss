@@ -1,0 +1,77 @@
+.banner {
+  margin-bottom: 80px;
+}
+
+.banner__wrapper {
+  position: relative;
+
+  display: flex;
+  width: 1366px;
+  margin: 0 auto;
+  padding: 52px 177px;
+
+  background-image: linear-gradient(to right, #F7F5EF, #F7F5EF 468px, #FDFDFB 468px, #FDFDFB 100%);
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 300px;
+    height: 100%;
+
+    background-image: url('../img/banner-bg-top.svg'),
+                      url('../img/banner-bg-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: top right, bottom right;
+  }
+}
+
+.banner__image-wrapper {
+  width: 521px;
+  margin-right: 50px;
+}
+
+.bunner__text-wrapper {
+  width: 380px;
+  padding: 70px 150px 70px 0;
+
+}
+
+.banner__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include Playfair_regular(32px, 32px);
+}
+
+.banner__text {
+  width: 376px;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include Roboto_regular(16px, 24px);
+}
+
+.banner__link {
+  display: block;
+  width: 205px;
+  padding: 26px 38px;
+  border: none;
+  background-color: $button-color;
+
+  @include Roboto_medium(12px, 14px);
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:hover {
+    background-color: darken($button-color, 10%);
+  }
+
+  &:active {
+    color: darken(#ffffff, 20%);
+  }
+}
