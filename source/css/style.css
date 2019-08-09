@@ -394,7 +394,7 @@ input[type="radio"].visually-hidden {
   width: 18px;
   height: 16px;
   margin-right: 20px;
-  padding: 15px;
+  padding: 5px;
   border: none;
   background-color: transparent;
   background-image: url("../img/menu.svg");
@@ -474,7 +474,12 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/find.svg");
   background-repeat: no-repeat;
   background-size: 16px 16px;
-  background-position: center; }
+  background-position: center;
+  cursor: pointer; }
+
+.promo {
+  margin-bottom: 70px;
+  background-color: #fbfbfb; }
 
 .promo__wrapper {
   display: flex;
@@ -539,6 +544,10 @@ input[type="radio"].visually-hidden {
   text-align: center;
   color: #ffffff;
   background-color: #444240; }
+  .promo__button:hover {
+    background-color: #5e5c59; }
+  .promo__button:active {
+    color: #b3b3b3; }
 
 .promo__watch-feature {
   position: absolute;
@@ -549,9 +558,25 @@ input[type="radio"].visually-hidden {
   .promo__watch-feature--price {
     top: 90px;
     left: 650px; }
+    .promo__watch-feature--price::after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: -60px;
+      width: 50px;
+      height: 1px;
+      background-color: #8B8371; }
   .promo__watch-feature--size {
     top: 610px;
-    left: 1150px; }
+    left: 1200px; }
+    .promo__watch-feature--size::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -60px;
+      width: 50px;
+      height: 1px;
+      background-color: #8B8371; }
 
 .social__list {
   display: flex;
@@ -564,17 +589,161 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style: none; }
 
-.social__list-item {
+.social__link {
+  display: block;
   width: 18px;
   height: 18px;
   background-position: center;
   background-repeat: no-repeat; }
-  .social__list-item--instagram {
+  .social__link--instagram {
     background-image: url("../img/icon-instagram.svg");
     background-size: 18px 18px; }
-  .social__list-item--facebook {
+  .social__link--facebook {
     background-image: url("../img/icon-facebook.svg");
     background-size: 9px 17px; }
-  .social__list-item--twitter {
+  .social__link--twitter {
     background-image: url("../img/icon-twitter.svg");
     background-size: 17px 14px; }
+  .social__link:hover {
+    opacity: 0.7; }
+  .social__link:active {
+    opacity: 0.3; }
+
+.popular {
+  margin-bottom: 70px; }
+
+.popular__wrapper {
+  position: relative;
+  width: 1366px;
+  padding: 0 98px;
+  margin: 0 auto; }
+
+.popular__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: 'Playfair Display', 'Times New Roman', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center; }
+
+.popular__watch-all {
+  position: absolute;
+  top: 50px;
+  right: 98px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #C4C0B6;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1B1A17; }
+  .popular__watch-all:hover {
+    color: #6e6a5d;
+    border-color: #dbd8d2; }
+  .popular__watch-all:active {
+    color: #d0cec7;
+    border-color: #f2f1ee; }
+
+.popular__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.popular__list-item {
+  position: relative;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-color: #fbfbfb; }
+  .popular__list-item:nth-child(2n) {
+    margin-right: 0; }
+
+.popular__list-title {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  margin: 0;
+  font-family: 'Playfair Display', 'Times New Roman', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase; }
+  .popular__list-title span {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Prata', 'Times New Roman', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px; }
+
+.popular__list-link {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+  font-family: 'Playfair Display', 'Times New Roman', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px; }
+  .popular__list-link::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    width: 30px;
+    height: 1px;
+    background-color: #8B8371; }
+  .popular__list-link:hover {
+    opacity: 0.7; }
+  .popular__list-link:active {
+    opacity: 0.3; }
+
+.popular__list-item--portrait {
+  width: 370px;
+  height: 467px;
+  background-image: url("../img/ellipse-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 313px; }
+  .popular__list-item--portrait .popular__list-image {
+    position: absolute;
+    top: 87px;
+    left: 80px; }
+
+.popular__list-item--landscape {
+  width: 760px;
+  height: 467px;
+  background-image: url("../img/ellipse-full-bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 10px right 62px;
+  background-size: 239px 467px; }
+  .popular__list-item--landscape .popular__list-image {
+    position: absolute;
+    top: 0;
+    right: 130px; }
+  .popular__list-item--landscape .popular__list-title {
+    top: 55px;
+    left: 55px;
+    font-size: 18px; }
+    .popular__list-item--landscape .popular__list-title span {
+      font-size: 18px; }
+  .popular__list-item--landscape .popular__list-link {
+    bottom: 50px;
+    left: 120px; }
+    .popular__list-item--landscape .popular__list-link::before {
+      left: -60px;
+      width: 50px; }
+
+.popular__list-item--another {
+  width: 565px;
+  height: 220px;
+  background-image: url("../img/ellipse-bg.png");
+  background-repeat: no-repeat;
+  background-position: center right 114px;
+  background-size: 220px; }
+  .popular__list-item--another .popular__list-image {
+    position: absolute;
+    top: 15px;
+    right: 170px; }
