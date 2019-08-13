@@ -9,6 +9,29 @@
   padding: 0;
 
   list-style: none;
+
+  &--landscape {
+    flex-direction: row;
+    width: 93px;
+    height: 24px;
+
+    .social__link {
+      width: 24px;
+      height: 24px;
+    }
+
+    .social__link--instagram {
+      background-size: 23px 24px;
+    }
+
+    .social__link--facebook {
+      background-size: 12px 22px;
+    }
+
+    .social__link--twitter {
+      background-size: 22px 18px;
+    }
+  }
 }
 
 .social__link {

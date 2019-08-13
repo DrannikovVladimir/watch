@@ -1,0 +1,73 @@
+.main-footer {
+  padding-top: 80px;
+  padding-bottom: 65px;
+
+  color: #ffffff;
+
+  background-color: $text-color;
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1366px;
+  margin: 0 auto;
+  padding: 0 183px;
+}
+
+.main-footer__logo {
+  margin-bottom: 30px;
+
+  span {
+    @include Playfair_bold(14px, 19px);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+}
+
+.main-footer__phone {
+  display: block;
+  margin-bottom: 10px;
+
+  @include Roboto_regular(12px, 14px);
+}
+
+.main-footer__email {
+  display: block;
+
+  @include Roboto_regular(12px, 14px);
+}
+
+.main-footer__section {
+  padding-top: 12px;
+}
+
+.main-footer__section-title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include Roboto_bold(14px, 16px);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.main-footer__list {
+  margin: 0;
+  padding: 0;
+
+  @include Roboto_regular(12px, 14px);
+  list-style: none;
+}
+
+.main-footer__list-item {
+  margin-bottom: 15px;
+}

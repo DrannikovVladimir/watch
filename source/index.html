@@ -34,9 +34,7 @@
       <ul class="main-header__user">
         <li class="main-header__user-item">
           <form class="form-search" action="index.html" method="post" tabindex="0">
-            <label class="form-search__label
-
-            " for="searchField">
+            <label class="form-search__label" for="searchField">
               <span class="visually-hidden">Найти</span>
             </label>
             <input class="form-search__input hidden" id="searchField" type="search">
@@ -129,8 +127,88 @@
           <p class="banner__text">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
           <a class="banner__link" href="catalog.html">Смотреть каталог</a>
         </div>
+        <div class="banner__toggle-wrapper">
+          <button class="banner__toggle banner__toggle--left">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <span class="banner__number">01</span>
+          <button class="banner__toggle banner__toggle--right">
+            <span class="visually-hidden">Вперёд</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__wrapper">
+        <div class="news__text-wrapper">
+          <h2 class="news__title">Следите за нашими новостями</h2>
+          <p class="news__text">Подписывайтесь на @conquest_watch в соцсетях и узнавайте о новинках и акциях первыми.</p>
+          <ul class="news__social social__list social__list--landscape">
+            <li class="social__list-item">
+              <a class="social__link social__link--instagram" href="https://instagram.com">
+                <span class="visually-hidden">Инстаграмм</span>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__link social__link--facebook" href="https://facebook.com">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__link social__link--twitter" href="https://twitter.com">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="news__image-wrapper">
+          <div class="news__image-small-wrapper">
+            <img class="news__image" src="img/watch1.jpg" width="242" height="228" alt="Часы">
+            <img class="news__image" src="img/watch2.jpg" width="242" height="228" alt="Часы">
+          </div>
+          <img class="news__image news__image--big" src="img/watch3.jpg" width="377" height="460" alt="Часы">
+        </div>
       </div>
     </section>
   </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <section class="main-footer__contacts">
+        <div class="main-footer__logo">
+          <img src="img/logo-footer.svg" alt="Логотип">
+          <span>conquest</span>
+        </div>
+        <a href="tel:+74994504797" class="main-footer__phone">8 (499) 450-47-97</a>
+        <a href="mailto:info@conquest.watch.ru" class="main-footer__email">info@conquest.watch.ru</a>
+      </section>
+      <section class="main-footer__section">
+        <h3 class="main-footer__section-title">О компании</h3>
+        <ul class="main-footer__list">
+          <li class="main-footer__list-item"><a href="#">Наши магазины</a></li>
+          <li class="main-footer__list-item"><a href="#">Вакансии</a></li>
+          <li class="main-footer__list-item"><a href="#">Сертификаты</a></li>
+          <li class="main-footer__list-item"><a href="#">Отзывы</a></li>
+        </ul>
+      </section>
+      <section class="main-footer__section">
+        <h3 class="main-footer__section-title">Покупателям</h3>
+        <ul class="main-footer__list">
+          <li class="main-footer__list-item"><a href="#">Каталог товаров</a></li>
+          <li class="main-footer__list-item"><a href="#">Как заказывать?</a></li>
+          <li class="main-footer__list-item"><a href="#">FAQ</a></li>
+          <li class="main-footer__list-item"><a href="#">Корпоративным клиентам</a></li>
+        </ul>
+      </section>
+      <section class="main-footer__section">
+        <h3 class="main-footer__section-title">Оплата и доставка</h3>
+        <ul class="main-footer__list">
+          <li class="main-footer__list-item"><a href="#">Способы оплаты</a></li>
+          <li class="main-footer__list-item"><a href="#">Время доставки</a></li>
+          <li class="main-footer__list-item"><a href="#">Гарантия и ремонт</a></li>
+          <li class="main-footer__list-item"><a href="#">Возврат и компенсация</a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>

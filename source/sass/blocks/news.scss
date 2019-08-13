@@ -1,0 +1,46 @@
+.news {
+  margin-bottom: 80px;
+}
+
+.news__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1366px;
+  margin: 0 auto;
+  padding: 0 97px;
+}
+
+.news__text-wrapper {
+  width: 480px;
+}
+
+.news__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include Playfair_regular(32px, 43px);
+}
+
+.news__text {
+  width: 380px;
+  margin: 0;
+  margin-bottom: 50px;
+
+  @include Roboto_regular(16px, 27px);
+}
+
+.news__image-wrapper {
+  display: flex;
+  width: 629px;
+}
+
+.news__image-small-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .news__image:first-child {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
