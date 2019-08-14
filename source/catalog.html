@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Swiss Watch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__wrapper main-header__wrapper--position-content">
+      <nav class="main-header__menu main-nav main-nav--catalog">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="stock.html">Акции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="main-header__logo main-header__logo--position" href="index.html">
+        <img class="main-header__logo-image" src="img/logo.svg" width="19" height="19" alt="Логотип">
+        <span class="main-header__logo-text">conquest</span>
+      </a>
+      <ul class="main-header__user main-header__user--position">
+        <li class="main-header__user-item">
+          <form class="form-search" action="index.html" method="post" tabindex="0">
+            <label class="form-search__label" for="searchField">
+              <span class="visually-hidden">Найти</span>
+            </label>
+            <input class="form-search__input hidden" id="searchField" type="search">
+          </form>
+        </li>
+        <li class="main-header__user-item">
+          <button class="main-header__like">
+            <span class="visually-hidden">Лайкнуть</span>
+          </button>
+        </li>
+        <li class="main-header__user-item">
+          <a class="main-header__basket" href="basket.html">
+            <span class="visually-hidden">Товары в корзине</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">Каталог</h1>
+    <section class="breadcrumbs">
+      <div class="breadcrumbs__wrapper">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a>Мужские часы</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="filters">
+      <div class="filters__wrapper">
+        <h2 class="visually-hidden">Мужские часы</h2>
+        <form class="form-filter" action="">
+          <fieldset class="form-filter__section">
+            <legend class="form-filter__section__title">Стоимость</legend>
+            <div class="controls">
+              <div class="controls__scale">
+                <div class="controls__bar"></div>
+              </div>
+              <div class="controls__toggle controls__toggle-min">
+                <label for="" class="controls__label">12 000 ₽</label>
+              </div>
+              <div class="controls__toggle controls__toggle-max">
+                <label for="" class="controls__label">90 000 ₽</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-filter__section">
+            <legend class="form-filter__title">Бренд</legend>
+            <ul class="form-filter__list">
+              <li class="form-filter__item">
+                <label class="form-filter__label" for="techne">Techne</label>
+                <input class="visually-hidden" id="techne" type="checkbox">
+              </li>
+              <li class="form-filter__item">
+                <label class="form-filter__label" for="rado">Rado</label>
+                <input class="visually-hidden" id="rado" type="checkbox">
+              </li>
+              <li class="form-filter__item">
+                <label class="form-filter__label" for="bvlgari">Bvlgari</label>
+                <input class="visually-hidden" id="bvlgari" type="checkbox">
+              </li>
+              <li class="form-filter__item">
+                <label class="form-filter__label" for="tissot">Tissot</label>
+                <input class="visually-hidden" id="tissot" type="checkbox">
+              </li>
+              <li class="form-filter__item">
+                <label class="form-filter__label" for="omega">Omege</label>
+                <input class="visually-hidden" id="omega" type="checkbox">
+              </li>
+              <li class="form-filter__item">
+                <label class="form-filter__label" for="montblanc">Montblanc</label>
+                <input class="visually-hidden" id="montblanc" type="checkbox">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-filter__section">
+            <legend class="form-filter__title">Механизм</legend>
+          </fieldset>
+          <fieldset class="form-filter__section">
+            <legend class="form-filter__title">Материал</legend>
+          </fieldset>
+          <fieldset class="form-filter__section">
+            <legend class="form-filter__title">Цвет</legend>
+          </fieldset>
+          <button class="form-filter__button" type="reset">Сбросить фильтр</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <section class="main-footer__contacts">
+        <div class="main-footer__logo">
+          <img src="img/logo-footer.svg" alt="Логотип">
+          <span>conquest</span>
+        </div>
+        <a href="tel:+74994504797" class="main-footer__phone">8 (499) 450-47-97</a>
+        <a href="mailto:info@conquest.watch.ru" class="main-footer__email">info@conquest.watch.ru</a>
+      </section>
+      <section class="main-footer__section">
+        <h3 class="main-footer__section-title">О компании</h3>
+        <ul class="main-footer__list">
+          <li class="main-footer__list-item"><a href="#">Наши магазины</a></li>
+          <li class="main-footer__list-item"><a href="#">Вакансии</a></li>
+          <li class="main-footer__list-item"><a href="#">Сертификаты</a></li>
+          <li class="main-footer__list-item"><a href="#">Отзывы</a></li>
+        </ul>
+      </section>
+      <section class="main-footer__section">
+        <h3 class="main-footer__section-title">Покупателям</h3>
+        <ul class="main-footer__list">
+          <li class="main-footer__list-item"><a href="#">Каталог товаров</a></li>
+          <li class="main-footer__list-item"><a href="#">Как заказывать?</a></li>
+          <li class="main-footer__list-item"><a href="#">FAQ</a></li>
+          <li class="main-footer__list-item"><a href="#">Корпоративным клиентам</a></li>
+        </ul>
+      </section>
+      <section class="main-footer__section">
+        <h3 class="main-footer__section-title">Оплата и доставка</h3>
+        <ul class="main-footer__list">
+          <li class="main-footer__list-item"><a href="#">Способы оплаты</a></li>
+          <li class="main-footer__list-item"><a href="#">Время доставки</a></li>
+          <li class="main-footer__list-item"><a href="#">Гарантия и ремонт</a></li>
+          <li class="main-footer__list-item"><a href="#">Возврат и компенсация</a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>

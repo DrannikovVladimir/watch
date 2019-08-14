@@ -1,52 +1,28 @@
 .main-header__wrapper {
+  position: relative;
+
   display: flex;
   align-items: center;
   width: 1366px;
   margin: 0 auto;
   padding-top: 35px;
-  padding-left: 55px;
-  padding-right: 55px;
-}
+  padding-left: 103px;
+  padding-right: 103px;
 
-.main-header__button--close {
-  width: 18px;
-  height: 16px;
-  margin-right: 20px;
-  padding: 5px;
-  border: none;
-
-  background-color: transparent;
-  background-image: url('../img/menu.svg');
-  background-size: 18px 16px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.main-header__menu {
-  display: flex;
-  width: 420px;
-  margin: 0;
-  padding: 0;
-
-  @include Roboto_regular(14px, 16px);
-  color: #555248;
-  list-style: none;
-
-  &--close {
-    display: none;
-  }
-}
-
-.main-header__menu-item {
-  margin-right: 65px;
-  &:last-child {
-    margin-right: 0;
+  &--position-content {
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
 .main-header__logo {
   display: flex;
   align-items: center;
+
+  &--position {
+    order: 0;
+  }
 }
 
 .main-header__logo-image {
@@ -70,6 +46,11 @@
   padding: 0;
 
   list-style: none;
+
+  &--position {
+    order: 2;
+    margin: 0;
+  }
 }
 
 .main-header__like {

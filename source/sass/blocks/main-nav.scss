@@ -1,0 +1,76 @@
+.main-nav__list {
+  display: none;
+  width: 420px;
+  margin: 0;
+  padding: 0;
+
+  @include Roboto_regular(14px, 16px);
+  color: #555248;
+  list-style: none;
+
+  &--close {
+    display: none;
+  }
+
+  &--column {
+    position: absolute;
+    top: 65px;
+    left: 95px;
+
+    flex-direction: column;
+    width: auto;
+
+    .main-nav__item {
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.main-nav__item {
+  margin-right: 65px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__button {
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+  padding: 5px;
+  border: none;
+
+  background-color: transparent;
+  background-image: url('../img/menu.svg');
+  background-size: 18px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-nav--catalog {
+  order: 1;
+  .main-nav__list {
+    display: flex;
+  }
+}
+
+.main-nav__toggle {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__button {
+    background-image: url('../img/cancel.svg');
+    background-size: 18px 18px;
+  }
+}

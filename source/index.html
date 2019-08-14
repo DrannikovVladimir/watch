@@ -10,23 +10,25 @@
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
-      <button class="main-header__button main-header__button--close">
-        <span class='visually-hidden'>Открыть меню</span>
-      </button>
-      <ul class="main-header__menu main-header__menu--close">
-        <li class="main-header__menu-item">
-          <a href="catalog.html">Каталог</a>
-        </li>
-        <li class="main-header__menu-item">
-          <a href="stock.html">Акции</a>
-        </li>
-        <li class="main-header__menu-item">
-          <a href="delivery.html">Доставка</a>
-        </li>
-        <li class="main-header__menu-item">
-          <a href="contacts.html">Контакты</a>
-        </li>
-      </ul>
+      <nav class="main-header__menu main-nav main-nav__toggle">
+        <button class="main-nav__button">
+          <span class='visually-hidden'>Открыть меню</span>
+        </button>
+        <ul class="main-nav__list main-nav__list--column">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="stock.html">Акции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="img/logo.svg" width="19" height="19" alt="Логотип">
         <span class="main-header__logo-text">conquest</span>
@@ -211,4 +213,14 @@
     </div>
   </footer>
 </body>
+<script type="text/javascript">
+  var button = document.querySelector('.main-nav__button');
+  var menu = document.querySelector('.main-nav');
+
+  button.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    console.log('click');
+    menu.classList.toggle('main-nav__toggle');
+  });
+</script>
 </html>

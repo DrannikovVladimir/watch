@@ -1,0 +1,46 @@
+.breadcrumbs__wrapper {
+  width: 1366px;
+  padding: 0 103px;
+  margin: 0 auto;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  @include Roboto_medium(14px, 16px);
+  text-transform: capitalize;
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  margin-right: 30px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -17px;
+
+    width: 4px;
+    height: 7px;
+    background-image: url('../img/arrow-breadcrumbs.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    &::after {
+      background: none;
+    }
+  }
+
+  a[href] {
+    opacity: 0.3;
+  }
+}
