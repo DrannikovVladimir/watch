@@ -1,0 +1,57 @@
+.controls {
+  position: relative;
+  height: 60px;
+}
+
+.controls__scale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #d4d4d4;
+}
+
+.controls__bar {
+  position: absolute;
+  top: 0;
+  left: 40px;
+
+  width: 120px;
+  height: 1px;
+
+  background-color: $title-color;
+}
+
+.controls__toggle {
+  position: absolute;
+  top: -5px;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid $title-color;
+
+  background-color: #ffffff;
+}
+
+.controls__toggle-min  {
+  left: 35px;
+}
+
+.controls__toggle-max  {
+  left: 155px;
+}
+
+.controls__label {
+  position: absolute;
+  top: 15px;
+  left: -20px;
+
+  width: 70px;
+
+  @include Roboto_regular(12px, 14px);
+}

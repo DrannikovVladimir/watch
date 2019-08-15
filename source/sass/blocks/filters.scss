@@ -1,0 +1,113 @@
+.filters__wrapper {
+  width: 230px;
+}
+
+.filters__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include Playfair_regular(32px, 43px);
+}
+
+.form-filter__section {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form-filter__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include Roboto_medium(14px, 16px);
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 3px;
+    right: 0;
+
+    width: 10px;
+    height: 10px;
+
+    background-image: url('../img/minus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.form-filter__section--closed {
+  .form-filter__title {
+    &::before {
+      background-image: url('../img/plus.svg');
+    }
+  }
+}
+
+.form-filter__label::before {
+  content: '';
+
+  position: absolute;
+  top: -1px;
+  left: 0;
+
+  width: 13px;
+  height: 13px;
+
+  border: 1px solid #6f6e6d;
+}
+
+.form-filter__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  @include Roboto_regular(12px, 12px);
+  text-transform: capitalize;
+}
+
+.form-filter__item {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+
+.form-filter__item input:checked + .form-filter__label::before {
+  background-color: #6f6e6d;
+  background-image: url('../img/check.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10px auto;
+}
+
+.form-filter__item input:active + .form-filter__label::before {
+  border: 2px solid red;
+}
+
+.form-filter__button {
+  display: block;
+  width: 100%;
+  padding: 24px 25px 23px;
+  border: 2px solid #e7e0cf;
+
+  @include Roboto_medium(12px, 14px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: transparent;
+
+  &:hover {
+    background-color: #e7e0cf;
+    color: lighten($title-color, 30%);
+  }
+
+  &:active {
+    background-color: lighten(#e7e0cf, 2%);
+    color: lighten($title-color, 50%);
+  }
+}
