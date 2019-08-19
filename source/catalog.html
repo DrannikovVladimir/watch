@@ -71,66 +71,295 @@
       </div>
     </section>
 
-    <section class="filters">
-      <div class="filters__wrapper">
-        <h2 class="filters__title">Мужские часы</h2>
-        <form class="form-filter" action="">
-          <fieldset class="form-filter__section">
-            <h3 class="form-filter__title">Стоимость</h3>
-            <div class="controls">
-              <div class="controls__scale">
-                <div class="controls__bar"></div>
-                <div class="controls__toggle controls__toggle-min">
-                  <label for="" class="controls__label">12 000 ₽</label>
-                </div>
-                <div class="controls__toggle controls__toggle-max">
-                  <label for="" class="controls__label">90 000 ₽</label>
+    <div class="main__columns">
+      <section class="filters">
+        <div class="filters__wrapper">
+          <h2 class="filters__title">Мужские часы</h2>
+          <form class="form-filter" action="">
+            <fieldset class="form-filter__section">
+              <h3 class="form-filter__title">Стоимость</h3>
+              <div class="controls">
+                <div class="controls__scale">
+                  <div class="controls__bar"></div>
+                  <div class="controls__toggle controls__toggle-min">
+                    <label for="" class="controls__label">12 000 ₽</label>
+                  </div>
+                  <div class="controls__toggle controls__toggle-max">
+                    <label for="" class="controls__label">90 000 ₽</label>
+                  </div>
                 </div>
               </div>
-            </div>
-          </fieldset>
-          <fieldset class="form-filter__section">
-            <h3 class="form-filter__title">Бренд</h3>
-            <ul class="form-filter__list">
-              <li class="form-filter__item">
-                <input class="visually-hidden" id="techne" type="checkbox">
-                <label class="form-filter__label" for="techne">Techne</label>
-              </li>
-              <li class="form-filter__item">
-                <input class="visually-hidden" id="rado" type="checkbox">
-                <label class="form-filter__label" for="rado">Rado</label>
-              </li>
-              <li class="form-filter__item">
-                <input class="visually-hidden" id="bvlgari" type="checkbox">
-                <label class="form-filter__label" for="bvlgari">Bvlgari</label>
-              </li>
-              <li class="form-filter__item">
-                <input class="visually-hidden" id="tissot" type="checkbox">
-                <label class="form-filter__label" for="tissot">Tissot</label>
-              </li>
-              <li class="form-filter__item">
-                <input class="visually-hidden" id="omega" type="checkbox">
-                <label class="form-filter__label" for="omega">Omege</label>
-              </li>
-              <li class="form-filter__item">
-                <input class="visually-hidden" id="montblanc" type="checkbox">
-                <label class="form-filter__label" for="montblanc">Montblanc</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form-filter__section form-filter__section--closed">
-            <h3 class="form-filter__title">Механизм</h3>
-          </fieldset>
-          <fieldset class="form-filter__section form-filter__section--closed">
-            <h3 class="form-filter__title">Материал</h3>
-          </fieldset>
-          <fieldset class="form-filter__section form-filter__section--closed">
-            <h3 class="form-filter__title">Цвет</h3>
-          </fieldset>
-          <button class="form-filter__button" type="reset">Сбросить фильтр</button>
-        </form>
-      </div>
-    </section>
+            </fieldset>
+            <fieldset class="form-filter__section">
+              <h3 class="form-filter__title">Бренд</h3>
+              <ul class="form-filter__list">
+                <li class="form-filter__item">
+                  <input class="visually-hidden" id="techne" type="checkbox">
+                  <label class="form-filter__label" for="techne">Techne</label>
+                </li>
+                <li class="form-filter__item">
+                  <input class="visually-hidden" id="rado" type="checkbox">
+                  <label class="form-filter__label" for="rado">Rado</label>
+                </li>
+                <li class="form-filter__item">
+                  <input class="visually-hidden" id="bvlgari" type="checkbox">
+                  <label class="form-filter__label" for="bvlgari">Bvlgari</label>
+                </li>
+                <li class="form-filter__item">
+                  <input class="visually-hidden" id="tissot" type="checkbox">
+                  <label class="form-filter__label" for="tissot">Tissot</label>
+                </li>
+                <li class="form-filter__item">
+                  <input class="visually-hidden" id="omega" type="checkbox">
+                  <label class="form-filter__label" for="omega">Omege</label>
+                </li>
+                <li class="form-filter__item">
+                  <input class="visually-hidden" id="montblanc" type="checkbox">
+                  <label class="form-filter__label" for="montblanc">Montblanc</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-filter__section form-filter__section--closed">
+              <h3 class="form-filter__title">Механизм</h3>
+            </fieldset>
+            <fieldset class="form-filter__section form-filter__section--closed">
+              <h3 class="form-filter__title">Материал</h3>
+            </fieldset>
+            <fieldset class="form-filter__section form-filter__section--closed">
+              <h3 class="form-filter__title">Цвет</h3>
+            </fieldset>
+            <button class="form-filter__button" type="reset">Сбросить фильтр</button>
+          </form>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+
+          <h2 class="visually-hidden">Каталог часов</h2>
+          <form class="form-sort" action="">
+            <label for="filterSort" class="form-sort__label">сортировать по:</label>
+            <select name="sort" id="filterSort" class="form-sort__select">
+              <option value="popular" checked>популярности</option>
+              <option value="price">цене</option>
+              <option value="novelty">новинкам</option>
+              <option value="name">названию</option>
+            </select>
+          </form>
+
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">techne<span class="">12 700 ₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img class="catalog__item-image" src="img/catalog-watch-1.png" width="136" height="225" alt="">
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">techne<span class="">12 700 ₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img class="catalog__item-image" src="img/catalog-watch-2.png" width="132" height="225" alt="">
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">techne<span class="">15 700 ₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img class="catalog__item-image" src="img/catalog-watch-3.png" width="151" height="225" alt="">
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">techne<span class="">15 700 ₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img class="catalog__item-image" src="img/catalog-watch-4.png" width="140" height="225" alt="">
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">techne<span class="">12 700₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img class="catalog__item-image" src="img/catalog-watch-5.png" width="129" height="225" alt="">
+            </li>
+            <li class="catalog__item catalog__item--stock">
+              <p>
+                <span>-20%</span> на вторую позицию в чеке
+              </p>
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">techne<span class="">18 500 ₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img class="catalog__item-image" src="img/catalog-watch-6.png" alt="" width="164" height="225">
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">techne<span class="">15 700 ₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img src="img/catalog-watch-7.png" width="136" height="225" alt="" class="catalog__item-image">
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">rado<span class="">14 700 ₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img src="img/catalog-watch-8.png" width="105" height="225" alt="" class="catalog__item-image">
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">bvlgari<span class="">72 700 ₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img src="img/catalog-watch-9.png" width="134" height="225" alt="" class="catalog__item-image">
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">techne<span class="">22 700 ₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img src="img/catalog-watch-10.png" alt="" width="149" height="225" class="catalog__item-image">
+            </li>
+            <li class="catalog__item">
+              <h3 class="catalog__item-title">rado<span class="">22 000 ₽</span></h3>
+              <ul class="catalog__user-list">
+                <li class="catalog__user-item">
+                  <button class="catalog__user-like">
+                    <span class="visually-hidden">Лайкнуть</span>
+                  </button>
+                </li>
+                <li class="catalog__user-item">
+                  <a class="catalog__user-cart" href="cart.html">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                  </a>
+                </li>
+              </ul>
+              <img src="img/catalog-watch-11.png" width="128" height="225" alt="" class="catalog__item-image">
+            </li>
+          </ul>
+
+          <ul class="pagination__list">
+            <li class="pagingation__item">
+              <a class="pagination__button" href="#">
+                <span class="visually-hidden">Назад</span>
+              </a>
+            </li>
+            <li class="pagingation__item">
+              <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagingation__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagingation__item pagingation__item--active">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagingation__item">
+              <a class="pagination__link" href="#">...</a>
+            </li>
+            <li class="pagingation__item">
+              <a class="pagination__link" href="#">12</a>
+            </li>
+            <li class="pagingation__item">
+              <a class="pagination__button" href="#">
+                <span class="visually-hidden">Вперёд</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="main-footer">
