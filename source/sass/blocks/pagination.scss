@@ -1,0 +1,54 @@
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 117px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  list-style: none;
+  @include Roboto_regular(14px, 21px);
+  color: #b6b6b6;
+}
+
+.pagingation-list__item--active {
+  .pagination-list__link {
+    color: $title-color;
+    font-weight: bold;
+  }
+}
+
+.pagination-list__button {
+  display: block;
+  width: 7px;
+  height: 14px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  &--left {
+    background-image: url('../img/arrow-left.svg');
+  }
+
+  &--right {
+    background-image: url('../img/arrow-right.svg');
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.pagination-list__link:hover {
+  color: $title-color;
+}
+
+.pagination-list__link:active {
+  opacity: 0.2;
+}

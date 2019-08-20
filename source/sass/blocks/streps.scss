@@ -1,0 +1,92 @@
+.streps {
+  margin-bottom: 100px;
+}
+
+.streps__wrapper {
+  position: relative;
+
+  width: 1360px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+.streps__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include Playfair_regular(32px, 43px)
+}
+
+.streps__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.streps__item {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 360px;
+  height: 374px;
+  padding: 20px;
+  margin-right: 40px;
+
+  background-color: #fdfdfb;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.streps__item-title {
+  margin: 0;
+
+  @include Roboto_bold(14px, 21px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $title-color;
+
+  span {
+    display: block;
+    padding-top: 5px;
+
+    font-weight: normal;
+    line-height: 16px;
+
+    color: #636261;
+  }
+}
+
+.streps-list__item-image {
+  position: absolute;
+
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.streps__see-all {
+  position: absolute;
+
+  top: 20px;
+  right: 100px;
+
+  padding-bottom: 7px;
+  border-bottom: 1px solid #C4C0B6;
+
+  @include Roboto_bold(16px, 19px);
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

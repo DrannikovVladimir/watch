@@ -1,0 +1,26 @@
+.form-sort__wrapper {
+  margin-bottom: 60px;
+}
+
+.form-sort {
+  @include Roboto_regular(14px, 21px);
+  text-align: right;
+}
+
+.form-sort__select-wrapper {
+  background-image: url('../img/arrow-select.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.form-sort__label {
+  color: #bdb9b5;
+}
+
+.form-sort__select {
+  padding: 5px;
+  width: 125px;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+}

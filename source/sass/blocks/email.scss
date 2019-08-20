@@ -1,0 +1,39 @@
+.email {
+  margin-bottom: 80px;
+
+  background-color: #EAE4D5;
+  background-image: url('../img/bg-left-email.svg'),
+  url('../img/bg-right-top-email.svg'),
+  url('../img/bg-right-bottom-email.svg');
+  background-repeat: no-repeat;
+  background-position: left top, right top, right bottom;
+  background-size: auto;
+}
+
+.email__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1360px;
+  margin: 0 auto;
+  padding: 68px 100px 76px;
+}
+
+.email__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @include Roboto_regular(12px, 14px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #818181;
+}
+
+.email__subtitle {
+  width: 505px;
+  margin: 0;
+
+  @include Playfair_bold(45px, 60px);
+  letter-spacing: 0.03em;
+  color: $title-color;
+}

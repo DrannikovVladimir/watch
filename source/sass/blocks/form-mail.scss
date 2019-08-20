@@ -1,0 +1,67 @@
+.form-email__button {
+  display: block;
+  width: 185px;
+  padding: 24px 43px;
+  border: none;
+
+  @include Roboto_bold(12px, 14px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #31302c;
+
+  &:hover {
+    background-color: lighten(#31302c, 10%)
+  }
+
+  &:active {
+    color: darken(#ffffff, 30%);
+  }
+}
+
+.form-email__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 496px;
+  margin: 0;
+}
+
+.form-email__input {
+  width: 278px;
+  border: none;
+  padding: 21px 20px 22px 0;
+  border-bottom: 1px solid #1B1A17;
+
+  @include Roboto_regular(14px, 16px);
+  color: $title-color;
+
+  background-color: #EAE4D5;
+}
+
+::-webkit-input-placeholder {
+  color: $title-color;
+  @include Roboto_regular(14px, 16px);
+}
+
+::-moz-placeholder {
+  color: $title-color;
+  @include Roboto_regular(14px, 16px);
+}/* Firefox 19+ */
+
+:-moz-placeholder {
+  color: $title-color;
+  @include Roboto_regular(14px, 16px);
+}/* Firefox 18- */
+
+:-ms-input-placeholder {
+  color: $title-color;
+  @include Roboto_regular(14px, 16px);
+}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
