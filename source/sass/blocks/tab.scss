@@ -1,0 +1,58 @@
+.tab-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.tab-toggle__item {
+  margin-right: 40px;
+}
+
+.tab-toggle__link {
+  display: block;
+  padding-bottom: 10px;
+  @include Roboto_medium(16px, 24px);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.active.tab-toggle__link {
+  border-bottom: 1px solid #C4C0B6;
+}
+
+.tab-content {
+  width: 100%;
+  min-height: 270px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.tab-content__item {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.tab-content__text {
+  width: 445px;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include Roboto_regular(14px, 23px);
+}

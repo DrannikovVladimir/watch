@@ -55,6 +55,16 @@
   }
 }
 
+.catalog__item-link:hover > .catalog__item-title {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #D75A4A;
+  color: #D75A4A;
+}
+
+.catalog__item-link:active > .catalog__item-title {
+  opacity: 0.6;
+}
+
 .catalog__item-title {
   margin: 0;
 

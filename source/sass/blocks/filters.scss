@@ -86,8 +86,8 @@
   background-size: 10px auto;
 }
 
-.form-filter__item input:active + .form-filter__label::before {
-  border: 2px solid red;
+.form-filter__item input:focus + .form-filter__label::before {
+  outline: 2px solid lightblue;
 }
 
 .form-filter__button {

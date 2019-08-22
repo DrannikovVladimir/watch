@@ -20,8 +20,18 @@
   background-position: bottom;
   background-size: 19px 16px;
 
+  transition: linear 0.1s;
+
   &--active {
     background-image: url('../img/heart-active.svg');
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -34,4 +44,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px 16px;
+
+  transition: linear 0.1s;
+
+  &--active {
+    background-image: url('../img/heart-active.svg');
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
