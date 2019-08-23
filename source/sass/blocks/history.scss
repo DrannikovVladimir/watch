@@ -1,0 +1,16 @@
+.history {
+  margin-bottom: 20px;
+}
+
+.history__wrapper {
+  width: 1366px;
+  margin: 0 auto;
+  padding: 0 81px;
+}
+
+.history__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include Playfair_regular(32px, 43px);
+}

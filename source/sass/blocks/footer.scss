@@ -1,4 +1,4 @@
-.main-footer {
+.page-footer {
   padding-top: 80px;
   padding-bottom: 65px;
 
@@ -15,7 +15,7 @@
   }
 }
 
-.main-footer__wrapper {
+.page-footer__wrapper {
   display: flex;
   justify-content: space-between;
 
@@ -24,7 +24,7 @@
   padding: 0 150px;
 }
 
-.main-footer__logo {
+.page-footer__logo {
   margin-bottom: 30px;
 
   span {
@@ -34,24 +34,24 @@
   }
 }
 
-.main-footer__phone {
+.page-footer__phone {
   display: block;
   margin-bottom: 10px;
 
   @include Roboto_regular(12px, 14px);
 }
 
-.main-footer__email {
+.page-footer__email {
   display: block;
 
   @include Roboto_regular(12px, 14px);
 }
 
-.main-footer__section {
+.page-footer__section {
   padding-top: 12px;
 }
 
-.main-footer__section-title {
+.page-footer__section-title {
   margin: 0;
   margin-bottom: 30px;
 
@@ -60,7 +60,7 @@
   text-transform: uppercase;
 }
 
-.main-footer__list {
+.page-footer__list {
   margin: 0;
   padding: 0;
 
@@ -68,6 +68,6 @@
   list-style: none;
 }
 
-.main-footer__list-item {
+.page-footer__list-item {
   margin-bottom: 15px;
 }

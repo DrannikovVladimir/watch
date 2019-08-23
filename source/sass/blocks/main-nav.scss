@@ -8,14 +8,10 @@
   color: #555248;
   list-style: none;
 
-  &--close {
-    display: none;
-  }
-
   &--column {
     position: absolute;
     top: 65px;
-    left: 95px;
+    left: 145px;
 
     flex-direction: column;
     width: auto;
