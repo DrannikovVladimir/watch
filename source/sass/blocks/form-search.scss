@@ -1,12 +1,18 @@
 .form-search__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
-  display: block;
+  padding-top: 2px;
+  padding-left: 2px;
 
-  background-image: url('../img/find.svg');
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: center;
+  &:hover > .icon-user {
+    fill: $accent-color;
+  }
 
+  &:active > .icon-user {
+    opacity: 0.6;
+  }
   cursor: pointer;
 }

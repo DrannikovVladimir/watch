@@ -3,9 +3,11 @@
 }
 
 .history__wrapper {
+  position: relative;
+
   width: 1366px;
   margin: 0 auto;
-  padding: 0 81px;
+  padding: 0 103px;
 }
 
 .history__title {
@@ -13,4 +15,28 @@
   margin-bottom: 40px;
 
   @include Playfair_regular(32px, 43px);
+}
+
+.history__button {
+  position: absolute;
+  top: 270px;
+
+  display: block;
+  width: 12px;
+  height: 23px;
+  border: none;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--left {
+    left: 60px;
+    background-image: url('../img/slider-arrow-left.svg');
+  }
+
+  &--right {
+    right: 60px;
+    background-image: url('../img/slider-arrow-right.svg');
+  }
 }

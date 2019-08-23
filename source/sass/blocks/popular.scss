@@ -99,8 +99,12 @@
     background-color: #8B8371;
   }
 
+  &:hover::before {
+    background-color: $accent-color;
+  }
+
   &:hover {
-    opacity: 0.7;
+    color: $accent-color;
   }
 
   &:active {
