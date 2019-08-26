@@ -389,7 +389,8 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding-top: 35px;
   padding-left: 103px;
-  padding-right: 103px; }
+  padding-right: 103px;
+  z-index: 15; }
   .page-header__wrapper--position-content {
     justify-content: space-between;
     padding-bottom: 40px;
@@ -556,6 +557,7 @@ input[type="radio"].visually-hidden {
   background-color: #fbfbfb; }
 
 .promo__wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   width: 1366px;
@@ -1007,12 +1009,15 @@ input[type="radio"].visually-hidden {
 
 .form-filter__section {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   border: none; }
 
 .form-filter__title {
   position: relative;
   margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-bottom: 20px;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-weight: 500;
@@ -1022,25 +1027,37 @@ input[type="radio"].visually-hidden {
   .form-filter__title::before {
     content: '';
     position: absolute;
-    top: 3px;
+    top: 8px;
     right: 0;
     width: 10px;
     height: 10px;
     background-image: url("../img/minus.svg");
     background-repeat: no-repeat;
     background-position: center; }
+  .form-filter__title:hover {
+    color: #D75A4A; }
+  .form-filter__title:hover::before {
+    background-image: url("../img/minus-active.svg"); }
 
-.form-filter__section--closed .form-filter__title::before {
+.form-filter__section--closed .form-filter__title:before {
   background-image: url("../img/plus.svg"); }
 
-.form-filter__label::before {
-  content: '';
-  position: absolute;
-  top: -1px;
-  left: 0;
-  width: 13px;
-  height: 13px;
-  border: 1px solid #6f6e6d; }
+.form-filter__section--closed .form-filter__title:hover::before {
+  background-image: url("../img/plus-active.svg"); }
+
+.form-filter__section--closed .form-filter__title:hover {
+  color: #D75A4A; }
+
+.form-filter__label {
+  cursor: pointer; }
+  .form-filter__label::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #6f6e6d; }
 
 .form-filter__list {
   margin: 0;
@@ -1086,6 +1103,12 @@ input[type="radio"].visually-hidden {
   .form-filter__button:active {
     background-color: #eae4d6;
     color: #a19d90; }
+
+.form-filter__section--closed .form-filter__list {
+  display: none; }
+
+.form-filter__section--closed .controls {
+  display: none; }
 
 .card-list {
   display: flex;

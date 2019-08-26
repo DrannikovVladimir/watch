@@ -40,7 +40,7 @@
         <button class="main-nav__button">
           <span class='visually-hidden'>Открыть меню</span>
         </button>
-        <ul class="main-nav__list main-nav__list--column">
+        <ul class="main-nav__list main-nav main-nav__list--column">
           <li class="main-nav__item">
             <a href="catalog.html">Каталог</a>
           </li>
@@ -141,22 +141,34 @@
           <li class="popular__list-item popular__list-item--portrait">
             <h3 class="popular__list-title">rado<span>65 300 ₽</span></h3>
             <a class="popular__list-link" href="catalog.html">Подробнее</a>
-            <img class="popular__list-image" src="img/watch-1.png" alt="Часы Rado">
+            <picture>
+              <source type="image/webp" srcset="img/watch-1.webp">
+              <img class="popular__list-image" src="img/watch-1.png" alt="Часы Rado">
+            </picture>
           </li>
           <li class="popular__list-item popular__list-item--landscape">
             <h3 class="popular__list-title">rado<span>65 300 ₽</span></h3>
             <a class="popular__list-link" href="catalog.html">Подробнее</a>
-            <img class="popular__list-image" src="img/watch-2.png" alt="Часы Rado">
+            <picture>
+              <source type="image/webp" srcset="img/watch-2.webp">
+              <img class="popular__list-image" src="img/watch-2.png" alt="Часы Rado">
+            </picture>
           </li>
           <li class="popular__list-item popular__list-item--another">
             <h3 class="popular__list-title">bvlgari<span>81 700 ₽</span></h3>
             <a class="popular__list-link" href="catalog.html">Подробнее</a>
-            <img class="popular__list-image" src="img/watch-3.png" alt="Часы Bvlgari">
+            <picture>
+              <source type="image/webp" srcset="img/watch-3.webp">
+              <img class="popular__list-image" src="img/watch-3.png" alt="Часы Bvlgari">
+            </picture>
           </li>
           <li class="popular__list-item popular__list-item--another">
             <h3 class="popular__list-title">bvlgari<span>72 700 ₽</span></h3>
             <a class="popular__list-link" href="catalog.html">Подробнее</a>
-            <img class="popular__list-image" src="img/watch-4.png" alt="Часы Bvlgari">
+            <picture>
+              <source type="image/webp" srcset="img/watch-4.webp">
+              <img class="popular__list-image" src="img/watch-4.png" alt="Часы Bvlgari">
+            </picture>
           </li>
         </ul>
       </div>
@@ -165,7 +177,10 @@
       <div class="banner__wrapper">
         <h2 class="visually-hidden">Особенности часов</h2>
         <div class="banner__image-wrapper">
-          <img class="banner__image" src="img/photo-banner.jpg" width="521" height="414" alt="Часы">
+          <picture>
+            <source type="image/webp" srcset="img/photo-banner.webp">
+            <img class="banner__image" src="img/photo-banner.jpg" width="521" height="414" alt="Часы">
+          </picture>
         </div>
         <div class="bunner__text-wrapper">
           <h3 class="banner__title">Подлинное качество</h3>
@@ -217,10 +232,19 @@
         </div>
         <div class="news__image-wrapper">
           <div class="news__image-small-wrapper">
-            <img class="news__image" src="img/watch1.jpg" width="242" height="228" alt="Часы">
-            <img class="news__image" src="img/watch2.jpg" width="242" height="228" alt="Часы">
+            <picture>
+              <source type="image/webp" srcset="img/watch1.webp">
+              <img class="news__image" src="img/watch1.jpg" width="242" height="228" alt="Часы">
+            </picture>
+            <picture>
+              <source type="image/webp" srcset="img/watch2.webp">
+              <img class="news__image" src="img/watch2.jpg" width="242" height="228" alt="Часы">
+            </picture>
           </div>
-          <img class="news__image news__image--big" src="img/watch3.jpg" width="377" height="460" alt="Часы">
+          <picture>
+            <source type="image/webp" srcset="img/watch3.webp">
+            <img class="news__image news__image--big" src="img/watch3.jpg" width="377" height="460" alt="Часы">
+          </picture>
         </div>
       </div>
     </section>
