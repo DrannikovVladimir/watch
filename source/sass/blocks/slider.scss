@@ -11,7 +11,10 @@
 
 .slider__view {
   position: relative;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 540px;
 }
 
 .slider-list__item {
