@@ -36,11 +36,23 @@
 }
 
 .news__image-small-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 242px 377px;
+  grid-template-rows: 228px auto;
+  grid-gap: 10px;
+}
 
-  .news__image:first-child {
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
+.picture-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.picture-2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.picture-3 {
+  grid-column: 2/3;
+  grid-row: 1/3;
 }
