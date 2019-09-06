@@ -33,12 +33,21 @@
 .banner__image-wrapper {
   width: 521px;
   margin-right: 50px;
+
+  overflow: hidden;
+}
+
+.banner__image {
+  transition: transform 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .bunner__text-wrapper {
   width: 380px;
   padding: 70px 150px 70px 0;
-
 }
 
 .banner__title {

@@ -13,6 +13,7 @@ function showSlide() {
   items[activeIndex].className = 'slider-list__item';
   activeIndex = (activeIndex + 1) % items.length;
   items[activeIndex].className = 'slider-list__item slider-list__item--active';
+
 }
 
 function getNewImg(str) {
